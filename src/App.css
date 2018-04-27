@@ -1,0 +1,160 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#map {
+  height: 100vh;
+}
+
+/* SIDENAV LIST */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
+.list {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #081326;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #fff;
+  text-align: center;
+}
+
+.open-button {
+  position: absolute;
+  top: calc(50% - 42px);
+  z-index: 1;
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px outset #cfcccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+.open-button:hover,
+.close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.close-button {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: 180px;
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px outset #cfcccc;
+  border-right: none;
+  border-radius: 25px 0 0 25px;
+  color: #000;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 80%;
+}
+
+ul li:hover {
+  border: 1px inset red;
+  border-radius: 5px;
+}
+
+.locations-input {
+  width: 80%;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.no-results button {
+  color: red;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+/* INFOWINDOW */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+.info {
+  max-width: 250px;
+  margin-left: 10px;
+  display: grid;
+  grid-template: 33% 33% 1fr / 50% 50%;
+}
+
+.name-address {
+  grid-area: 1 / 1;
+}
+
+.name-address h2 {
+  margin: 0;
+}
+
+.name-address p {
+  margin: 5px 0;
+}
+
+.info-img {
+  grid-area: 1 / 2 / 3;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.link {
+  grid-area: 2 / 1 / 2;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.info-contact {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.info-contact a {
+  padding: 5px 0;
+}
+
+.powered-by {
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: 3 / 1 / 3 / 3;
+  width: 150px;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+/* ERROR MESSAGE */
+.error-msg {
+  text-align: center;
+}
+
+.error-msg h2 {
+  margin-top: 0;
+}

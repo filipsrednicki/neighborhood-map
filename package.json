@@ -1,0 +1,23 @@
+{
+  "homepage": "https://filipsrednicki.github.io/neighborhood-map/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "escape-string-regexp": "^1.0.5",
+    "gh-pages": "^1.1.0",
+    "react": "^16.3.1",
+    "react-async-loader": "^0.1.2",
+    "react-async-script-loader": "^0.3.0",
+    "react-dom": "^16.3.1",
+    "react-foursquare": "^1.0.3",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  }
+}
