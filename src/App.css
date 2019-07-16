@@ -90,7 +90,7 @@ ul li:hover {
 
 /* INFOWINDOW */
 
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
 
 /* entypo */
 [class*="entypo-"]:before {
@@ -101,7 +101,7 @@ ul li:hover {
   max-width: 250px;
   margin-left: 10px;
   display: grid;
-  grid-template: 33% 33% 1fr / 50% 50%;
+  grid-template: auto / 50% 50%;
 }
 
 .name-address {
